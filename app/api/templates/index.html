@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Processing App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Text Processing App</h1>
+    <form method="POST" action="/predict">
+        <label for="text">Enter text:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
